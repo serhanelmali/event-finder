@@ -1,5 +1,8 @@
 <template>
-  <div class="icon-wrapper" v-html="svg"></div>
+  <div class="icon-wrapper">
+    <div v-html="svg"></div>
+    <slot></slot>
+  </div>
 </template>
 
 <script>
@@ -33,10 +36,14 @@ export default {
 .icon-wrapper {
   display: inline-flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.4);
   font-size: 1rem;
   font-weight: 600;
   margin-right: 6px;
+}
+
+.icon-wrapper svg {
+  color: rgba(0, 0, 0, 0.4);
+  margin-right: 5px;
 }
 .icon {
   stroke: currentColor;
@@ -44,5 +51,9 @@ export default {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
+}
+
+.slot {
+  margin-left: 5px;
 }
 </style>
