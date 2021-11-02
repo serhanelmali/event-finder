@@ -10,6 +10,8 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "eslint-config-prettier": "^8.3.0",
+    "feather-icons": "^4.28.0",
+    "lodash": "^4.17.21",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.3.0",
     "vue": "^2.6.11",
