@@ -1,9 +1,35 @@
 <template>
   <div>
     <h1>Events Listing</h1>
-
-    <router-link :to="{ name: 'event-show', params: { id: 1 } }"
-      >Show Event #1</router-link
-    >
+    <EventCard />
   </div>
 </template>
+<script>
+import EventCard from '@/components/EventCard.vue'
+export default {
+  components: {
+    EventCard,
+  },
+}
+</script>
+<style>
+.event-card {
+  padding: 20px;
+  margin-bottom: 24px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.event-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.event-card > .title {
+  margin: 0;
+}
+
+.event-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+}
+</style>
