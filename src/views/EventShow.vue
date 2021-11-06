@@ -22,7 +22,7 @@
         :key="index"
         class="list-item"
       >
-        <b>{{ attendee.name }}</b>
+        <b>{{ attendee }}</b>
       </li>
     </ul>
   </div>
